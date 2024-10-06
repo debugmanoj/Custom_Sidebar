@@ -31,7 +31,7 @@ const DashboardLayout = ({ Children }) => {
          <Container mobile={true}>
          
             <DashboardNavBar />
-          <main className="max-h-screen overflow-y-hidden w-full pt-1 pl-2 pr-8 pb-6">
+          <main className="max-h-screen  w-full pt-1 pl-2 pr-8 pb-6">
             <Outlet />
           </main>
           <DashboardSideBar mobile={true}/>
@@ -43,7 +43,7 @@ const DashboardLayout = ({ Children }) => {
       ) : screens.md ? (
         <Container mobile={false}>
           <DashboardSideBar />
-          <main className="max-h-screen overflow-y-hidden w-full pt-0 pl-0 pr-0 pb-6">
+          <main className="max-h-screen overflow-scroll   w-full pt-0 pl-0 pr-0 pb-6">
             <DashboardNavBar />
             <Outlet />
           </main>
@@ -51,7 +51,7 @@ const DashboardLayout = ({ Children }) => {
       ) : (
         <Container mobile={false}>
           <DashboardSideBar />
-          <main className="max-h-screen overflow-y-hidden w-full pt-1 pl-2 pr-8 pb-6">
+          <main className="max-h-screen  w-full pt-1 pl-2 pr-8 pb-6">
             <DashboardNavBar />
             <Outlet />
           </main>

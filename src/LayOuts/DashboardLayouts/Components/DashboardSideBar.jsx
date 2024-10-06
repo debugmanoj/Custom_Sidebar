@@ -46,11 +46,11 @@ const DashboardSideBar = ({ mobile }) => {
       className={`flex ${mobile ? "w-full flex-row h-auto" : null} font-light`}
     >
       <div
-        className={`bg-green-200 h-screen p-5 pt-8 relative duration-300 ease-in-out ${
-          open ? (mobile ? "w-screen" : "w-60") : "w-20"
+        className={`bg-green-200  p-5 pt-2 relative duration-300 ease-in-out ${
+          open ? (mobile ? "w-screen" : "w-60 h-screen") : "w-20"
           
         }
-        mobile ? "fixed bottom-0 left-0 w-full flex-row justify-evenly" : null
+        / mobile ? "fixed bottom-0 left-0 w-full flex-row justify-evenly" : null
          transition-all rounded-md ${mobile ? "flex-row justify-evenly" : null}`} // Sidebar width animation
       >
         <div
@@ -106,7 +106,7 @@ const DashboardSideBar = ({ mobile }) => {
                 <ul
                   className={`absolute cursor-pointer 
                   left-full ${
-                    mobile ? "bottom-11 left-5 right-7 " : "top-0 "
+                    mobile ? "bottom-10 left-1 right-1 " : "top-0 "
                   } text-center bg-white shadow-lg rounded-md p-1 w-48`}
                 >
                   {Menu.subMenu.map((sub, index) => (
